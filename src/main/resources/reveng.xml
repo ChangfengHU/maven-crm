@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+    <!--  定义生成实体类规范  match-table 需要将那些表生成实体类   match-catalog 操作是哪一个数据库 -->
+    <schema-selection  match-table="customers"  match-catalog="bos"/>
+    <!-- 定义实体类生成规范 -->
+    <!-- 基础模块 执行hibernate3:hbm2java -->
+    <table name="customers" catalog="bos"
+           class="cn.itcast.mavencrm.domain.Customer">
+        <primary-key>
+        <generator class="uuid"></generator>
+        </primary-key>
+    </table>
+</hibernate-reverse-engineering>
