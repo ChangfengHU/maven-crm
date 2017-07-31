@@ -34,6 +34,7 @@ public class Customer implements java.io.Serializable {
         this.telephone = telephone;
         this.address = address;
         System.out.println("");
+        System.out.println("ceshi");
     }
     public Customer(String name, String telephone, String address, String station, String decidedzoneId) {
        this.name = name;
